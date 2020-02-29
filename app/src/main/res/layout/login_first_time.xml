@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#FFCC00">
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="205dp"
+        android:layout_height="190dp"
+        android:contentDescription="mdmlogo"
+        app:srcCompat="@drawable/mdmama"
+        tools:layout_editor_absoluteX="103dp"
+        tools:layout_editor_absoluteY="51dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="298dp"
+        android:layout_height="95dp"
+        android:fontFamily="@font/roboto_mono_medium"
+        tools:layout_editor_absoluteX="56dp"
+        tools:layout_editor_absoluteY="281dp"
+        tools:text="Al tocar en iniciar sesión aceptas nuestros Términos." />
+
+    <com.google.android.gms.common.SignInButton
+        android:id="@+id/sign_in_button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        tools:layout_editor_absoluteX="142dp"
+        tools:layout_editor_absoluteY="441dp"
+        tools:text="Inicia sesion con Google" />
+
+    <Button
+        android:id="@+id/button3"
+        style="@style/Widget.AppCompat.Button.Colored"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INGRESA CON TU NUMERO DE TELEFONO"
+        tools:layout_editor_absoluteX="62dp"
+        tools:layout_editor_absoluteY="517dp" />
+
+    <com.google.android.material.textfield.TextInputEditText
+        android:layout_width="366dp"
+        android:layout_height="wrap_content"
+        android:baselineAligned="false"
+        android:fontFamily="@font/roboto_mono_medium"
+        android:hint="¿ Problemas para iniciar sesión ?"
+        android:textColor="@color/common_google_signin_btn_text_dark_focused"
+        tools:layout_editor_absoluteX="19dp"
+        tools:layout_editor_absoluteY="602dp"
+        tools:text="¿ Problemas para iniciar sesión ?" />
+</androidx.constraintlayout.widget.ConstraintLayout>
